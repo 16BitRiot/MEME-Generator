@@ -15,9 +15,11 @@ submit.addEventListener('click', function(e){
 
     // create new element
     function addElement () {
+
         let newDiv = document.createElement('div');
         let newDiv2 = document.createElement('div');
         let newDiv3 = document.createElement('div');
+        let box = document.createElement('div');
         const removeButton = document.createElement('Button');
         const topContent = document.createTextNode(topText);
         const bottomContent = document.createTextNode(bottomText);
@@ -27,9 +29,6 @@ submit.addEventListener('click', function(e){
         newDiv2.innerText = topText;
         newDiv3.setAttribute('id', 'bottomPhrase')
         newDiv3.innerText = bottomText;
-
-
-
         removeButton.innerText = 'REMOVE';
         removeButton.classList.add('removeStyle');
         newDiv.style.backgroundImage = `url(${image})`;
@@ -38,8 +37,9 @@ submit.addEventListener('click', function(e){
         newDiv.appendChild(lineBreak);
         newDiv.appendChild(newDiv3);
         newDiv.appendChild(lineBreak);
-        newDiv.appendChild(removeButton);
-        drop.appendChild(newDiv)
+        box.appendChild(newDiv);
+        box.appendChild(removeButton);
+        drop.prepend(box)
 
         removeButton.addEventListener('click', function(e){
             console.log('delete');
