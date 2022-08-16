@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-color:darkcyan;
+}
+
+input {
+    text-align: center;
+    border-radius: 8px;
+    border: 8px;
+    margin: 8px;
+
+}
+
+.inputTextStyle {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:black;
+    color: aliceblue;
+}
+
+.submit {
+    border: 12px;
+}
+
+.clickDiv {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    color: white;
+    width: 480px;
+    height: 480px;
+    position: relative;
+    border: 12px;
+    background-position: center;
+    margin: auto;
+}
+
+.removeStyle {
+    margin: auto;
+    border: 12px;
+    position: relative;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 20em;
+    top: 19.2em;
+}
+
+#topPhrase {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#bottomPhrase {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top: 5em;
+}
